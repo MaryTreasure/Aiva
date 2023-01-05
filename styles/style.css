@@ -329,6 +329,7 @@ body._lock {
 
 .services {
     background-color: var(--color-yellow);
+    overflow: hidden;
 }
 
 .services__right-cont {
@@ -382,6 +383,19 @@ body._lock {
 
 .services__text-apart-r {
     max-width: 346px;
+}
+
+.services__left-cont p {
+    width: 554px;
+    margin-bottom: 18px;
+}
+
+.services__left-cont h3 {
+    margin-bottom: 19px;
+}
+
+.services__left-cont {
+    gap: 122px;
 }
 
 
