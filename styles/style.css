@@ -1,0 +1,250 @@
+:root {
+    --color-brown: #5C3F2A;
+    --color-gray: #AB8C76;
+    --color-light-brown: #D29E86;
+    --color-pink: #EBA68B;
+    --color-light: #EEE7DF;
+    --color-yellow: #FFFAEE;
+    --color-menu: #AE8470;
+
+    --font-size-base: 20px;
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-brown);
+
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Forum', cursive;
+    font-weight: 400;
+    color: var(--color-brown);
+    font-size: 46px;
+} 
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+.page-section {
+    margin: 80px auto;
+}
+
+.alighn-i-center {
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: var(--color-brown);
+}
+
+li {
+    list-style: none;
+}
+p {
+    margin: 0;
+    line-height: 130%;
+    font-size: 20px;
+}
+
+/* header */
+
+
+.header__left {
+    align-items: center;
+}
+
+.header__left img {
+    margin-right: 30px;
+}
+
+.header__top-menu li {
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.header__contacts {
+    font-size: 14px;
+}
+
+/* Гамбургер */
+.menu {
+    align-items: center;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+.menu__icon {
+    z-index: 5;
+    position: relative;
+    width: 130px;
+    height: 8px;
+    cursor: pointer;
+} 
+
+.menu__icon._active p {
+    display: none;
+}
+
+.menu__icon._active::before {
+    width: 42px;
+    left: 33px;
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+    background-color: var(--color-light); 
+}
+
+.menu__icon._active::after {
+    
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+    background-color: var(--color-light);
+}
+
+.menu__icon::before,
+.menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%; 
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: var(--color-brown);
+}
+
+.menu__icon::before,
+.menu__icon::after {
+    content: "";
+}
+
+.menu__icon::before {
+    top: 0;
+    width: 75px;
+}
+
+.menu__icon--hover:hover::before {
+    width: 30px;
+    left: 45px;
+}
+
+.menu__icon--hover:hover::after {
+    width: 15px;
+    left: 60px;
+    transition: all 0.5s ease 0.1s;
+}
+
+.menu__icon::after {
+    position: absolute;
+    bottom: 0;
+    width: 42px;
+    left: 33px;
+}
+
+.menu__icon p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -6px;
+    font-size: 14px;
+}
+
+.menu__body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%, 0px);
+    background-color: var(--color-menu);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+}
+
+.menu__body._active {
+    transform: translate(0px, 0px);
+}
+
+.menu__list a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu__list li {
+    list-style: none;
+    margin: 0 0 30px 0;
+}
+
+/* Section main */
+
+.section-main__right p {
+    max-width: 461px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.section-main__left h1 {
+    font-size: 52px;
+    width: 270px;
+}
+
+.section-main__left {
+    margin-left: 96px;
+    text-align: center;
+}
+
+.section-main__img {
+    max-width: 620px;
+    max-height: 390px;
+}
+
+.section-main__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-main {
+    gap: 30px;
+}
+
+/* Center-text */
+
+.center-text {
+    background-color: var(--color-yellow);
+}
+
+.center-text__content {
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+.center-text__content h2 {
+    max-width: 940px;
+    margin: auto;
+    margin-bottom: 65px;
+}
+
+.center-text__content p {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 65px;
+}
+
