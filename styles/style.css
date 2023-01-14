@@ -129,10 +129,20 @@ p {
 .header__top-menu li {
     margin-right: 40px;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .header__contacts {
     font-size: 14px;
+}
+
+.header__contacts p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__phone {
+    font-weight: 500;
 }
 
 /* Гамбургер */
@@ -151,6 +161,10 @@ body._lock {
     height: 8px;
     cursor: pointer;
 } 
+
+.menu__icon p {
+    font-weight: 500;
+}
 
 .menu__icon._active p {
     display: none;
@@ -199,7 +213,7 @@ body._lock {
 .menu__icon--hover:hover::after {
     width: 15px;
     left: 60px;
-    transition: all 0.5s ease 0.1s;
+    transition: all 0.5s ease 0.2s;
 }
 
 .menu__icon::after {
@@ -398,4 +412,85 @@ body._lock {
     gap: 122px;
 }
 
+/* Spoilers */
+
+.spoilers__item {
+    width: 100%;
+    background-color: var(--color-light-brown);
+    margin: 30px;
+}
+
+.spoilers__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    background-color: transparent;
+    color: var(--color-yellow);
+    padding: 23px;
+    border: none;
+    cursor: pointer;
+}
+
+.spoilers__content {
+    color: var(--color-yellow);
+    font-size: 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease-out;
+    padding: 0 25px;
+}
+
+.spoilers__content li {
+    padding: 25px;
+}
+
+.spoilers__content li:last-child {
+    padding-bottom: 50px;
+}
+.spoilers__icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.spoilers__icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    height: 2px;
+    background-color: var(--color-yellow);
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
+
+.spoilers__icon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 80%;
+    background-color: var(--color-yellow);
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
+
+.spoilers__icon {
+    transition: transform 0.3s ease-out;
+}
+
+.open .spoilers__icon {
+    transform: rotate(45deg);
+}
+
+.open .spoilers__content {
+    opacity: 1;
+}
 

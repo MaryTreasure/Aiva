@@ -12,9 +12,32 @@ if (iconMenu) {
         } else {
             iconMenuHidden.classList.add('menu__icon--hover');
         }
-
     });
-    
-    
-
 }
+
+// Спойлер
+
+document.addEventListener('DOMContentLoaded', () => {
+    const spoilers = document.querySelectorAll('.spoilers__item');
+
+    spoilers.forEach(el => {
+        el.addEventListener('click', (e) => {
+            const self = e.currentTarget;
+            const control = self.querySelector('.spoilers__control');
+            const content = self.querySelector('.spoilers__content');
+
+            self.classList.toggle('open');
+
+            if (self.classList.contains('open')) {
+                control.setAttribute('aria-expanded', true);
+                content.setAttribute('aria-hidden', false);
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                control.setAttribute('aria-expanded', false);
+                content.setAttribute('aria-hidden', true);
+                content.style.maxHeight = null;
+            }
+        });
+    });
+});
+
