@@ -41,3 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Слайдер Swiper
+
+new Swiper('.image-slider',{
+
+
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    slidesPerView: 3,
+    spaceBetween: 75,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    }
+});

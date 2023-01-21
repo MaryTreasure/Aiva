@@ -14,6 +14,7 @@
 
     <!-- подключаем стили -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -197,106 +198,247 @@
             </div>
         </div>
     </section>
-    <section class="page-section">
+    <section class="page-section schedule">
         <h2 class="uppercase text-center">Выбери день для практики</h2>
-    </section>
-    <section class="spolilers container" data-spoilers>
-        <ul>
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Понедельник</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <div class="spoilers__content" aria-hidden="true">
-                    <ul >
+        <div class="spolilers container" data-spoilers>
+            <ul>
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Понедельник</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <div class="spoilers__content" aria-hidden="true">
+                        <ul >
+                            <li>10:00 - 11:00  Хатха-йога</li>
+                            <li>11:00 - 11:30  Йога-нидра</li>
+                            <li>18:00 - 19:00  Аштанга-Йога</li>
+                            <li>19:00 - 20:00  Дживамукти -Йога</li>
+                            <li>20:00 - 20:20  Гвоздестояние</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Вторник</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <ul class="spoilers__content" aria-hidden="true">
                         <li>10:00 - 11:00  Хатха-йога</li>
                         <li>11:00 - 11:30  Йога-нидра</li>
                         <li>18:00 - 19:00  Аштанга-Йога</li>
                         <li>19:00 - 20:00  Дживамукти -Йога</li>
                         <li>20:00 - 20:20  Гвоздестояние</li>
                     </ul>
+                </li>
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Среда</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <ul class="spoilers__content" aria-hidden="true">
+                        <li>10:00 - 11:00  Хатха-йога</li>
+                        <li>11:00 - 11:30  Йога-нидра</li>
+                        <li>18:00 - 19:00  Аштанга-Йога</li>
+                        <li>19:00 - 20:00  Дживамукти -Йога</li>
+                        <li>20:00 - 20:20  Гвоздестояние</li>
+                    </ul>
+                </li>
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Четверг</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <ul class="spoilers__content" aria-hidden="true">
+                        <li>10:00 - 11:00  Хатха-йога</li>
+                        <li>11:00 - 11:30  Йога-нидра</li>
+                        <li>18:00 - 19:00  Аштанга-Йога</li>
+                        <li>19:00 - 20:00  Дживамукти -Йога</li>
+                        <li>20:00 - 20:20  Гвоздестояние</li>
+                    </ul>
+                </li>     
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Пятница</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <ul class="spoilers__content" aria-hidden="true">
+                        <li>10:00 - 11:00  Хатха-йога</li>
+                        <li>11:00 - 11:30  Йога-нидра</li>
+                        <li>18:00 - 19:00  Аштанга-Йога</li>
+                        <li>19:00 - 20:00  Дживамукти -Йога</li>
+                        <li>20:00 - 20:20  Гвоздестояние</li>
+                    </ul>
+                </li>
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Суббота</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <ul class="spoilers__content" aria-hidden="true">
+                        <li>10:00 - 11:00  Хатха-йога</li>
+                        <li>11:00 - 11:30  Йога-нидра</li>
+                        <li>18:00 - 19:00  Аштанга-Йога</li>
+                        <li>19:00 - 20:00  Дживамукти -Йога</li>
+                        <li>20:00 - 20:20  Гвоздестояние</li>
+                    </ul>
+                </li>
+                <li class="spoilers__item">
+                    <button class="spoilers__control" aria-expanded="false">
+                        <span class="spoilers__title">Воскресенье</span>
+                        <span class="spoilers__icon"></span>
+                    </button>
+                    <ul class="spoilers__content" aria-hidden="true">
+                        <li>10:00 - 11:00  Хатха-йога</li>
+                        <li>11:00 - 11:30  Йога-нидра</li>
+                        <li>18:00 - 19:00  Аштанга-Йога</li>
+                        <li>19:00 - 20:00  Дживамукти -Йога</li>
+                        <li>20:00 - 20:20  Гвоздестояние</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>  
+    <section class="container wrapper page-section">
+        <h2 class="uppercase text-center">Учителя нашей студии</h2>
+        <div class="image-slider swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide image-slider__image">    
+                    <img src="images/instructor-one.jpg" alt="">
+                    <p class="image-slider__name">Яна Полякова</p>
+                    <p class="image-slider__text">Хатха-Йога</p>
                 </div>
-            </li>
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Вторник</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <ul class="spoilers__content" aria-hidden="true">
-                    <li>10:00 - 11:00  Хатха-йога</li>
-                    <li>11:00 - 11:30  Йога-нидра</li>
-                    <li>18:00 - 19:00  Аштанга-Йога</li>
-                    <li>19:00 - 20:00  Дживамукти -Йога</li>
-                    <li>20:00 - 20:20  Гвоздестояние</li>
-                </ul>
-            </li>
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Среда</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <ul class="spoilers__content" aria-hidden="true">
-                    <li>10:00 - 11:00  Хатха-йога</li>
-                    <li>11:00 - 11:30  Йога-нидра</li>
-                    <li>18:00 - 19:00  Аштанга-Йога</li>
-                    <li>19:00 - 20:00  Дживамукти -Йога</li>
-                    <li>20:00 - 20:20  Гвоздестояние</li>
-                </ul>
-            </li>
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Четверг</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <ul class="spoilers__content" aria-hidden="true">
-                    <li>10:00 - 11:00  Хатха-йога</li>
-                    <li>11:00 - 11:30  Йога-нидра</li>
-                    <li>18:00 - 19:00  Аштанга-Йога</li>
-                    <li>19:00 - 20:00  Дживамукти -Йога</li>
-                    <li>20:00 - 20:20  Гвоздестояние</li>
-                </ul>
-            </li>     
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Пятница</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <ul class="spoilers__content" aria-hidden="true">
-                    <li>10:00 - 11:00  Хатха-йога</li>
-                    <li>11:00 - 11:30  Йога-нидра</li>
-                    <li>18:00 - 19:00  Аштанга-Йога</li>
-                    <li>19:00 - 20:00  Дживамукти -Йога</li>
-                    <li>20:00 - 20:20  Гвоздестояние</li>
-                </ul>
-            </li>
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Суббота</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <ul class="spoilers__content" aria-hidden="true">
-                    <li>10:00 - 11:00  Хатха-йога</li>
-                    <li>11:00 - 11:30  Йога-нидра</li>
-                    <li>18:00 - 19:00  Аштанга-Йога</li>
-                    <li>19:00 - 20:00  Дживамукти -Йога</li>
-                    <li>20:00 - 20:20  Гвоздестояние</li>
-                </ul>
-            </li>
-            <li class="spoilers__item">
-                <button class="spoilers__control" aria-expanded="false">
-                    <span class="spoilers__title">Понедельник</span>
-                    <span class="spoilers__icon"></span>
-                </button>
-                <ul class="spoilers__content" aria-hidden="true">
-                    <li>10:00 - 11:00  Хатха-йога</li>
-                    <li>11:00 - 11:30  Йога-нидра</li>
-                    <li>18:00 - 19:00  Аштанга-Йога</li>
-                    <li>19:00 - 20:00  Дживамукти -Йога</li>
-                    <li>20:00 - 20:20  Гвоздестояние</li>
-                </ul>
-            </li>
-        </ul>
+                <div class="image-slider__slide swiper-slide image-slider__image">
+                    <img src="images/instructor-two.jpg" alt="">
+                    <p class="image-slider__name">Антон Алексеев</p>
+                    <p class="image-slider__text">Аштанга-йога</p>
+                </div>
+                <div class="image-slider__slide swiper-slide image-slider__image">
+                    <img src="images/instructor-three.jpg" alt="">
+                    <p class="image-slider__name">Кира Кочеткова</p>
+                    <p class="image-slider__text">Дживамукти-йога</p>
+                </div>
+                <div class="image-slider__slide swiper-slide image-slider__image">
+                    <img src="images/instructor-four.jpg" alt="">
+                    <p class="image-slider__name">Аня Минеева</p>
+                    <p class="image-slider__text">Йога-нидра</p>
+                </div>
+                <div class="image-slider__slide swiper-slide image-slider__image">
+                    <img src="images/instructor-five.jpg" alt="">
+                    <p class="image-slider__name">Артур Устюгов</p>
+                    <p class="image-slider__text">Гвоздестояние</p>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
-<script src="js/app.js"></script>
+    <section class="container offer page-section">
+        <h2 class="uppercase text-center">Цены на занятия йогой</h2>
+        <div class="offer__cards">
+            <div class="offer__item d-flex flex-sb">
+                <p class="offer__heading">Разовое посещение группового занятия</p>
+                <div class="offer__mid-block">
+                    <p class="offer__text">на все виды практик</p>
+                    <div class="offer__line"></div>
+                    <p class="offer__price">2 000 руб</p>
+                </div>
+                <a class="btn btn--ptimary" href="">Купить</a>
+            </div>
+            <div class="offer__item d-flex flex-sb">
+                <p class="offer__heading">Абонемент на 5 групповых занятий</p>
+                <div class="offer__mid-block">
+                    <p class="offer__text">на все виды практик</p>
+                    <div class="offer__line"></div>
+                    <p class="offer__price">8 000 руб</p>
+                </div>
+                <a class="btn btn--ptimary" href="">Купить</a>
+            </div>
+            <div class="offer__item d-flex flex-sb">
+                <p class="offer__heading">Абонемент на 10 групповых занятий</p>
+                <div class="offer__mid-block">
+                    <p class="offer__text">на все виды практик</p>
+                    <div class="offer__line"></div>
+                    <p class="offer__price">17 500 руб</p>
+                </div>
+                <a class="btn btn--ptimary" href="">Купить</a>
+            </div>
+            <div class="offer__item d-flex flex-sb">
+                <p class="offer__heading">Персональное занятие</p>
+                <div class="offer__mid-block">
+                    <p class="offer__text">для 1-2 человек</p>
+                    <div class="offer__line"></div>
+                    <p class="offer__price">10 000 руб</p>
+                </div>
+                <a class="btn btn--ptimary" href="">Купить</a>
+            </div>
+            <div class="offer__item d-flex flex-sb">
+                <p class="offer__heading">Персональное занятие</p>
+                <div class="offer__mid-block">
+                    <p class="offer__text">для 3 человек</p>
+                    <div class="offer__line"></div>
+                    <p class="offer__price">8 000 руб</p>
+                </div>
+                <a class="btn btn--ptimary" href="">Купить</a>
+            </div>
+            <div class="offer__item d-flex flex-sb">
+                <p class="offer__heading">Безлимитный абонемент</p>
+                <div class="offer__mid-block">
+                    <p class="offer__text">Действует 1 месяц</p>
+                    <div class="offer__line"></div>
+                    <p class="offer__price">17 500 руб</p>
+                </div>
+                <a class="btn btn--ptimary" href="">Купить</a>
+            </div>
+        </div>
+    </section>
+    <section class="free-class">
+        <div class="free-class__content container d-flex flex-sb">
+            <div class="free-class__img">
+                <img src="images/free-class-flower.png" alt="">
+            </div>
+            <p class="free-class__text">Пробное занятие в студии <span class="free-class__text--change">бесплатно</span></p>
+            <a class="btn btn--ptimary" href="">Записаться</a>
+
+        </div>
+    </section>
+    <section class="gallery page-section">
+        <h2 class="uppercase text-center">Галерея</h2>
+
+    </section>
+    <section class="contacts">
+        <div class="container padding-block">
+            <h2 class="uppercase text-center">Контакты</h2>
+            <div class="contacts__content">
+                <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2215.612776856856!2d43.97396511610335!3d56.267468359646934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414e2a9e7dcccf7f%3A0xa7ff261b43f9c9c0!2z0L_RgNC-0YHQvy4g0JPQsNCz0LDRgNC40L3QsCwgMTE4LCDQndC40LbQvdC40Lkg0J3QvtCy0LPQvtGA0L7QtCwg0J3QuNC20LXQs9C-0YDQvtC00YHQutCw0Y8g0L7QsdC7LiwgNjAzMDA5!5e0!3m2!1sru!2sru!4v1674066071555!5m2!1sru!2sru"
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <div class="contacts__block">
+                    <p class="contacts__heading">Свяжитесь с нами</p>
+                    <div class="contacts__item d-flex">
+                        <img src="images/icones/map.svg" alt="">
+                        <p class="contacts__details">Н.Новгород, пр. Гагарина 118</p>
+                    </div>
+                    <div class="contacts__item d-flex">
+                        <img src="images/icones/phone.svg" alt="">
+                        <p class="contacts__details">8 800 2000 800</p>
+                    </div>
+                    <div class="contacts__item d-flex">
+                        <img src="images/icones/calendar.svg" alt="">
+                        <p class="contacts__details">10:00 - 20:00</p>
+                    </div>
+
+                 </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            
+        </div>
+
+    </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
