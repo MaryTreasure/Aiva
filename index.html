@@ -37,26 +37,39 @@
             <div class="menu__icon menu__icon--hover">
                 <p href="">меню</p>
             </div>
-            <nav class="menu__body d-flex">
-                <ul class="menu__list">
-                    <li><a href="">Айва</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Польза йоги</a></li>
-                    <li><a href="">Учителя</a></li>
-                    <li><a href="">Абонемент</a></li>
-                </ul>
-                <ul class="menu__list">
-                    <li><a href="">Галерея</a></li>
-                    <li><a href="">Практики</a></li>
-                    <li><a href="">Контакты</a></li>
-                    <li><a href="">Расписание</a></li>
-                    <li class="d-flex flex-sb">
-                        <a href=""><img src="images/icones/telegram-logo.svg" alt=""></a>
-                        <a href=""><img src="images/icones/youtube-logo.svg" alt=""></a>
-                        <a href=""><img src="images/icones/vk-logo.svg" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu__body">
+                <div class="container">
+                    <div class="header__menu menu  ">
+                        <div class="header__left d-flex">
+                            <a href=""><img src="images/icones/logo-menu.svg" alt=""></a>
+                            <div class="header__contacts--white">
+                                <p>Нижний Новгород, пр. Гагарина  118</p>
+                                <a class="header__phone--white" href="tel:+78002000800">8 800 2000 800</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="menu__center d-flex">
+                        <ul class="menu__list">
+                            <li><a href="">Айва</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Польза йоги</a></li>
+                            <li><a href="">Учителя</a></li>
+                            <li><a href="">Абонемент</a></li>
+                        </ul>
+                        <ul class="menu__list">
+                            <li><a href="">Галерея</a></li>
+                            <li><a href="">Практики</a></li>
+                            <li><a href="">Контакты</a></li>
+                            <li><a href="">Расписание</a></li>
+                            <li class="d-flex flex-sb">
+                                <a href=""><img src="images/icones/telegram-logo.svg" alt=""></a>
+                                <a href=""><img src="images/icones/youtube-logo.svg" alt=""></a>
+                                <a href=""><img src="images/icones/vk-logo.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -432,12 +445,60 @@
 
         </div>
     </section>
-    <section class="container">
-        <div>
-            
+    <section class="container feedback page-section">
+        <div class="feedback__content d-flex">
+            <form class="feedback__form" action="">
+                <h3 class="feedback__form-heading uppercase">Запишитесь на пробный урок</h3>
+                <div class="feedback__form-field">
+                    <input type="text" class="feedback__form-item" placeholder="Имя">
+                </div>
+                <div class="feedback__form-field">
+                    <input type="tel" class="feedback__form-item" placeholder="Телефон">
+                </div>
+                <div class="feedback__form-field">
+                    <input type="email" class="feedback__form-item" placeholder="E-mail">
+                </div>
+                <button class="btn btn--ptimary feedback__btn feedback__btn--size">Отправить заявку</button>
+                <label class="feedback-form__terms">
+                    <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href=""> условиями обработки данных</a></p>
+                </label>
+            </form>
+            <img src="images/feedback-form-img.jpg" alt="">        
         </div>
-
     </section>
+    <footer class="footer">
+        <div class="footer__content container padding-block">
+            <nav class="footer__nav d-flex flex-sb">
+                <ul class="footer__column">
+                    <li><a href="">Айва</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Учителя</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li><a href="">Преимущества йоги</a></li>
+                    <li><a href="">Абонемент</a></li>
+                    <li><a href="">Галерея</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li><a href="">Практики</a></li>
+                    <li><a href="">Расписание</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li class="footer__social-media d-flex">
+                        <a href=""><img src="images/icones/telegram-logo.svg" alt=""></a>
+                        <a href=""><img src="images/icones/youtube-logo.svg" alt=""></a>
+                        <a href=""><img src="images/icones/vk-logo.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="tel:+78002000800">8 800 2000 800</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="footer__logo d-flex" href=""><img src="images/icones/logo-footer.svg" alt=""></a>
+        </div>
+        
+    </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
