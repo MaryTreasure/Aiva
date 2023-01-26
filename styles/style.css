@@ -103,6 +103,7 @@ p {
     background-color: var(--color-pink);
     color: var(--color-yellow);
 }
+
 .btn--secondary {
     border: 1px var(--color-brown) solid;
     background-color: var(--color-yellow);
@@ -114,6 +115,7 @@ p {
     background-color: var(--color-pink);
     color: var(--color-yellow);
 }
+
 
 /* прокрутка элементов при скролле */
 
@@ -756,6 +758,7 @@ body._lock {
     width: 100%;
     margin-top: 32px;
     margin-bottom: 42px;
+    cursor: pointer;
 }
 
 .feedback-form__text {
