@@ -115,6 +115,9 @@ p {
     color: var(--color-yellow);
 }
 
+/* прокрутка элементов при скролле */
+
+
 .element-animation {
     opacity: 0;
 }
@@ -124,7 +127,43 @@ p {
     transition: opacity 1s;
 }
 
-/* header */
+
+.animation-first.element-animation {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.animation-first.element-animation.element-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animation-second.element-animation {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.animation-second.element-animation.element-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.25s;
+}
+
+.animation-third.element-animation {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.animation-third.element-animation.element-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+/* Верхнее меню */
 
 
 .header__left {
@@ -286,7 +325,7 @@ body._lock {
     margin: 0 0 30px 0;
 }
 
-/* Section main */
+/* Главный блок */
 
 .section-main__right p {
     max-width: 461px;
@@ -318,7 +357,7 @@ body._lock {
     gap: 30px;
 }
 
-/* Center-text */
+/* Блок с центральным текстом */
 
 .center-text {
     background-color: var(--color-yellow);
@@ -335,42 +374,9 @@ body._lock {
     margin: auto;
     margin-bottom: 65px;
 }
-.animation-first.element-animation {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
-}
 
-.animation-first.element-animation.element-show {
-    opacity: 1;
-    transform: translateY(0);
-}
 
-.animation-second.element-animation {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
-}
-
-.animation-second.element-animation.element-show {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.25s;
-}
-
-.animation-third.element-animation {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
-}
-
-.animation-third.element-animation.element-show {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.5s;
-}
-
-/* About us */
+/* Блок О нас */
 
 .about-us__poster {
     position: absolute;
@@ -391,7 +397,7 @@ body._lock {
     margin-bottom: 30px;
 }
 
-/* Section grid */
+/* Блок Преимущества */
 
 .section-grid__grid {
     display: grid;
@@ -400,7 +406,7 @@ body._lock {
     row-gap: 40px;
 }
 
-/* services */
+/* Блок Услуги */
 
 .services {
     background-color: var(--color-yellow);
@@ -473,7 +479,7 @@ body._lock {
     gap: 122px;
 }
 
-/* Spoilers */
+/* Блок Спойлер */
 
 .spoilers__item {
     width: 100%;
@@ -564,7 +570,7 @@ body._lock {
     background-position: calc(50% + 650px) calc(50% + 50px);
 }
 
-/* Slider */
+/* Блок Слайдер */
 
 .swiper-slide img {
     max-width: 100%;
@@ -608,7 +614,7 @@ body._lock {
 }
 
 
-/* Offer */
+/* Блок Прайс */
 
 .offer__item {
     max-width: 320px;
@@ -648,7 +654,7 @@ body._lock {
 }
 
 
-/* Free class */
+/* Блок Бесплатное занятие */
 
 
 .free-class {
@@ -675,7 +681,7 @@ body._lock {
     color: var(--color-light-brown);
 }
 
-/* Contacts */
+/* Блок Контакты */
 
 .contacts {
     background-color: var(--color-yellow);
@@ -722,7 +728,7 @@ body._lock {
 }
 
 
-/* Feedback-form */
+/* Блок Форма обратной связи */
 
 .feedback__form {
     width: 463px;
@@ -791,7 +797,7 @@ body._lock {
   }
 
 
-  /* Footer */
+  /* Блок Футер */
 
   .footer {
     background-color: var(--color-menu);
@@ -824,7 +830,7 @@ body._lock {
   }
 
 
-  /* Gallery */
+  /* Блок Галерея */
 
   .gallery__images {
     display: grid;
