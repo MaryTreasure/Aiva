@@ -291,12 +291,14 @@ body._lock {
     background-color: var(--color-menu);
     transition: all 0.5s ease 0s;
     overflow: auto;
+    z-index: 1;
 
 }
 
 .menu__center {
-    justify-content: center;
-    gap: 50px;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 600px;
     padding-top: 200px;
 
 }
