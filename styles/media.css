@@ -110,7 +110,7 @@
 
     .schedule {
         background-position: 50% 500px;
-        height: 1050px;
+        min-height: 1050px;
     }
 
 
