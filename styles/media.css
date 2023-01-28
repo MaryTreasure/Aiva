@@ -9,7 +9,7 @@
     }
 
     .page-section {
-        margin: 60px auto;
+        margin: 80px auto;
     }
     .about-us__poster {
         position: static;
@@ -120,7 +120,7 @@
 
     /* На устройства 768px*/
 
-    .header nav {
+    .header__top-menu {
         display: none;
     }
 
@@ -141,6 +141,97 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 85px;
         row-gap: 65px;
+    }
+
+    .services__left-img-cont {
+        flex-direction: column;
+    }
+
+    .services__left-img {
+        width: 736px;
+        height: 496px;
+    }
+    
+    .services__right-cont {
+        width: 736px;
+    }
+
+    .services__left-cont {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .services__left-cont-img {
+        width: 699px;
+        height: 480px;
+    }
+
+    .services__left-cont p  {
+        width: 699px;
+    }
+
+    .services__mid-img {
+        display: none;
+    }
+
+    .services__adapted-block {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .services__text-apart-l p {
+        margin-bottom: 30px;
+    }
+
+    .services__mid-img-block {
+        width: 699px;
+        height: 480px;
+    }
+
+    .services__text-apart-l {
+        width: 699px;
+    }
+
+    .image-slider .swiper-pagination-bullet {
+        width: 70px;
+    }
+
+    .offer__cards {
+        grid-template-columns: repeat(2, 320px);
+        justify-content: center;
+    }
+
+    .feedback__content  {
+        flex-direction: column;
+    }
+
+
+    .feedback__form {
+        box-sizing: border-box;
+        height: 490px;
+    }
+
+    .contacts__map {
+        width: 683px;
+        height: 445px;
+    }
+
+    .gallery__images {
+        grid-template-columns: repeat(2, 292px);
+        grid-column-gap: 50px;
+        justify-content: center;
+    }
+
+    .gallery__item {
+        width: 292px;
+        height: 189px;
+    }
+
+    .section-main__left {
+        margin-left: 0;
     }
 }
 

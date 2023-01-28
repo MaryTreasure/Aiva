@@ -416,12 +416,12 @@ body._lock {
 }
 
 .services__right-cont {
-    max-width: 554px;
+    width: 554px;
 }
 
 .services__left-img {
-    max-width: 565px;
-    max-height: 390px;
+    width: 565px;
+    height: 390px;
     position: absolute;
     bottom: 0;
     right: calc(50% + 100px /2);  
@@ -450,8 +450,8 @@ body._lock {
 }
 
 .services__mid-img-block {
-    max-width: 363px;
-    max-height: 250px;
+    width: 363px;
+    height: 250px;
 }
 
 .services__mid-img-block img {
@@ -461,7 +461,7 @@ body._lock {
 }
 
 .services__text-apart-l {
-    max-width: 400px;
+    width: 400px;
 }
 
 .services__text-apart-r {
@@ -469,7 +469,7 @@ body._lock {
 }
 
 .services__left-cont p {
-    max-width: 554px;
+    width: 554px;
     margin-bottom: 18px;
 }
 
@@ -479,6 +479,10 @@ body._lock {
 
 .services__left-cont {
     gap: 122px;
+}
+
+.services__adapted-block {
+    display: none;
 }
 
 /* Блок Спойлер */
@@ -619,8 +623,8 @@ body._lock {
 /* Блок Прайс */
 
 .offer__item {
-    max-width: 320px;
-    min-height: 348px;
+    width: 320px;
+    height: 348px;
     background-color: var(--color-yellow);
     border: thin var(--color-light-brown) solid;
     padding: 35px 22px;
