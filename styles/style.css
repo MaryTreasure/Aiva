@@ -469,7 +469,7 @@ body._lock {
 }
 
 .services__left-cont p {
-    width: 554px;
+    max-width: 554px;
     margin-bottom: 18px;
 }
 
@@ -486,7 +486,7 @@ body._lock {
 .spoilers__item {
     width: 100%;
     background-color: var(--color-light-brown);
-    margin: 21px;
+    margin: 21px 0 21px 0 ;
     border-radius: 4px;
 }
 

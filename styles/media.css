@@ -1,11 +1,147 @@
 @media screen and (max-width: 1200px) {
     /* На устройства 1024px*/
+    .container__adapted {
+        padding: 50px 15px;
+    }
+
+    .container__adapted--no-padding {
+        padding: 0px 15px;
+    }
+
+    .page-section {
+        margin: 60px auto;
+    }
+    .about-us__poster {
+        position: static;
+        width: 452px;
+        height: 283px;
+    }
+    .about-us__poster img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .about-us {
+        align-items: center;
+        gap: 58px;
+    }
+
+    .services__left-img {
+        position: static;
+        width: 449px;
+        height: 300px;
+    }
+
+    .services__left-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .services__left-img-cont  {
+        gap: 58px;
+    }
+
+    .services__text-apart-l {
+        width: 330px;
+    }
+
+    .services__text-adapt-r {
+        width: 266px;
+    }
+
+    .services__mid-img {
+        align-items: center;
+    }
+    .services__left-cont-img {
+        width: 449px;
+        height: 300px;
+    }
+
+    .services__left-cont-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .services__left-cont {
+        gap: 42px;
+    }
+    .services__left-cont p {
+        width: 464px;
+
+    }
+
+    .services__right-cont {
+        width: 456px;
+    }
+
+    .spolilers ul {
+        padding: 0;
+    }
+    .gallery__item {
+        width: 292px;
+        height: 189px;
+    }
+    .gallery__item img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .gallery__item--big {
+        width: 292px;
+        height: 410px;
+    }
+
+    .gallery__item--big img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .gallery__images {
+        grid-row-gap: 35px;
+        grid-column-gap: 50px;
+    }
+
+    .offer__cards {
+        grid-column-gap: 30px;
+    }
+
+    .schedule {
+        background-position: 50% 500px;
+        height: 1050px;
+    }
+
 
 }
 
 @media screen and (max-width: 1010px) {
 
     /* На устройства 768px*/
+
+    .header nav {
+        display: none;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+    .about-us__poster {
+
+        width: 699px;
+        height: 480px;
+    }
+
+    .about-us__info {
+        max-width: 699px;
+    }
+
+    .section-grid__grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 85px;
+        row-gap: 65px;
+    }
 }
 
 @media screen and (max-width: 754px) {
