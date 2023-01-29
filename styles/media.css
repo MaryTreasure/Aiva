@@ -237,6 +237,92 @@
 
 @media screen and (max-width: 754px) {
     /* На устройства 480px*/
+
+    .section-main {
+        flex-direction: column;
+    }
+
+    .about-us__poster {
+        width: 443px;
+        height: 319px
+    }
+
+    .section-grid__grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .services__left-img,
+    .services__mid-img-block,
+    .services__left-cont-img {
+        width: 443px;
+        height: 319px
+    }
+
+    .services__right-cont,
+    .services__text-apart-l,
+    .services__left-info {
+        width: 443px;
+    }
+
+    .services__left-cont p {
+        width: 443px;
+    }
+
+    .offer__cards {
+        grid-template-columns: repeat(1, 320px);
+    }
+
+    .free-class__content {
+        flex-direction: column;
+    }
+
+    .gallery__images {
+        grid-template-columns: repeat(1, 292px);
+    }
+
+    .contacts__block {
+        position: static;
+        width: 438px;
+        height: 171px;
+        box-sizing: border-box;
+    }
+
+    .contacts__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__map {
+        padding: 0;
+        width: 438px;
+        height: 287px;
+    }
+    .spoilers__control {
+        padding: 15px;
+    }
+
+    .header__contacts p,
+    .header__contacts--white p,
+    .footer__content {
+        display: none;
+
+    }
+
+    .btn--big-size {
+        width: 438px;
+    }
+
+    .footer__phone {
+        color: var(--color-yellow);
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .footer__social-media {
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
