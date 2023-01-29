@@ -62,7 +62,7 @@ new Swiper('.image-slider',{
             slidesPerView: 1,
         },
         480: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         992: {
             slidesPerView: 3,

@@ -294,11 +294,16 @@ body._lock {
     z-index: 1;
 }
 
+.menu__body-content {
+    height: 100%;
+}
+
 .menu__center {
     margin: auto;
     justify-content: space-between;
     max-width: 600px;
-    padding-top: 200px;
+    margin-top: 200px;
+
 }
 
 .menu__body._active {
@@ -309,6 +314,10 @@ body._lock {
     text-decoration: none;
     font-size: 20px;
     color: var(--color-yellow);
+}
+
+.menu__list {
+    text-align: center;
 }
 
 .header__contacts--white,
@@ -670,7 +679,7 @@ body._lock {
 .free-class__content {
     align-items: center;
     position: relative;
-    height: 220px;  
+    min-height: 220px;  
 }
 
 .free-class__img {

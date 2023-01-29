@@ -26,6 +26,10 @@
         gap: 58px;
     }
 
+    .menu__body {
+        height: 700px;
+    }
+
     .services__left-img {
         position: static;
         width: 449px;
@@ -113,6 +117,10 @@
         min-height: 1050px;
     }
 
+    .menu__center {
+        margin-top: 150px;
+    }
+
 
 }
 
@@ -135,6 +143,10 @@
 
     .about-us__info {
         max-width: 699px;
+    }
+
+    .menu__body {
+        height: 700px;
     }
 
     .section-grid__grid {
@@ -235,6 +247,13 @@
     }
 }
 
+@media screen and (max-width: 880px) {
+    .menu__body {
+        height: 640px;
+    }
+
+}
+
 @media screen and (max-width: 754px) {
     /* На устройства 480px*/
 
@@ -242,9 +261,24 @@
         flex-direction: column;
     }
 
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
     .about-us__poster {
         width: 443px;
         height: 319px
+    }
+
+    .menu__center {
+        margin-top: 30px;
     }
 
     .section-grid__grid {
@@ -326,9 +360,109 @@
     .services__block {
         margin-bottom: 100px;
     }
+    .section-main__left h1 {
+        font-size: 46px;
+    }
+
+    .image-slider .swiper-pagination-bullet {
+        width: 50px;
+    }
+
+    .spoilers__title {
+        font-size: 18px;
+    }
+
+    .menu__list {
+        padding: 20px;
+    }
+
+    .menu__body {
+        height: 450px;
+    }
 
 }
 
 @media screen and (max-width: 450px) {
     /* На устройства 324px*/
+
+    .header__left {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+
+    .services__left-img,
+    .services__mid-img-block,
+    .services__left-cont-img,
+    .about-us__poster {
+        width: 287px;
+        height: 214px
+    }
+
+    .services__right-cont,
+    .services__text-apart-l,
+    .services__left-info,
+    .about-us__info {
+        width: 287px;
+    }
+
+    .services__left-cont p {
+        width: 287px;
+    }
+
+    .btn--big-size {
+        width: 287px;
+    }
+
+    .contacts__map {
+        width: 300px;
+        height: 192px;
+    }
+
+    .contacts__block {
+        width: 300px;
+    }
+
+    .feedback__form {
+        width: 291px;
+        height: 530px;
+        padding: 10px 15px;
+    }
+
+    .feedback__img {
+        width: 292px;
+        height: 405px;
+    }
+
+    .free-class__btn {
+        margin-top: 20px;
+    }
+
+    .schedule {
+        background-position: 50% 400px;
+        min-height: 850px;
+    }
+
+    .header__left {
+        align-items: flex-start;
+    }
+
+    .menu__list a {
+        font-size: 18px;
+    }
+
+    .menu__list li {
+        text-align: start;
+    }
+
+    .menu__list {
+        padding: 0;
+    }
+
+
+
 }
