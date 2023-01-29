@@ -323,6 +323,10 @@
         margin-top: 15px;
     }
 
+    .services__block {
+        margin-bottom: 100px;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
