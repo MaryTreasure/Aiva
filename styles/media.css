@@ -261,6 +261,10 @@
         flex-direction: column;
     }
 
+    .spoilers__content {
+        font-size: 18px;
+    }
+
     h2 {
         font-size: 40px;
     }
@@ -370,7 +374,7 @@
     }
 
     .spoilers__title {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .menu__list {

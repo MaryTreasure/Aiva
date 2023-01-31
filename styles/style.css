@@ -195,6 +195,27 @@ p {
     font-weight: 500;
 }
 
+.header__top-menu--underline {
+    position: relative;
+}
+
+.header__top-menu--underline::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -2px;
+	width: 0;
+	height: 1px;
+	background-color: var(--color-pink);
+}
+
+.header__top-menu--underline:hover:before {
+	width: 100%;
+}
+
+.header__top-menu--underline::before {
+	transition: width 0.35s;
+}
+
 /* Гамбургер */
 .menu {
     align-items: center;
@@ -843,6 +864,10 @@ body._lock {
 
   .footer__content {
     padding-bottom: 20px;
+  }
+
+  .footer__adapted {
+    display: none;
   }
 
 

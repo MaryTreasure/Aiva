@@ -30,9 +30,9 @@
             </div>
             <nav>
                 <ul class="header__top-menu d-flex flex-sb">
-                    <li><a href="">Расписание</a></li>
-                    <li><a href="">Абонемент</a></li>
-                    <li><a href="">Направления</a></li>
+                    <li class="header__top-menu--underline"><a href="#schedule">Расписание</a></li>
+                    <li class="header__top-menu--underline"><a href="#offer">Абонемент</a></li>
+                    <li class="header__top-menu--underline"><a href="#services">Направления</a></li>
                 </ul>
             </nav>
             <div class="menu__icon menu__icon--hover">
@@ -42,7 +42,7 @@
                 <div class="menu__body-content container container__adapted--no-padding">
                     <div class="header__menu menu  ">
                         <div class="header__left d-flex">
-                            <a href=""><img src="images/icones/logo-menu.svg" alt=""></a>
+                            <a href="#main"><img src="images/icones/logo-menu.svg" alt=""></a>
                             <div class="header__contacts--white">
                                 <p>Нижний Новгород, пр. Гагарина  118</p>
                                 <a class="header__phone--white" href="tel:+78002000800">8 800 2000 800</a>
@@ -51,21 +51,21 @@
                     </div>
                     <nav class="menu__center d-flex">
                         <ul class="menu__list">
-                            <li><a href="">Айва</a></li>
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Польза йоги</a></li>
-                            <li><a href="">Учителя</a></li>
-                            <li><a href="">Абонемент</a></li>
+                            <li><a href="#main">Айва</a></li>
+                            <li><a href="#about-us">О нас</a></li>
+                            <li><a href="#section-grid">Польза йоги</a></li>
+                            <li><a href="#teachers">Учителя</a></li>
+                            <li><a href="#offer">Абонемент</a></li>
                         </ul>
                         <ul class="menu__list">
-                            <li><a href="">Галерея</a></li>
-                            <li><a href="">Практики</a></li>
-                            <li><a href="">Контакты</a></li>
-                            <li><a href="">Расписание</a></li>
+                            <li><a href="#gallery">Галерея</a></li>
+                            <li><a href="#services">Практики</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#schedule">Расписание</a></li>
                             <li class="d-flex flex-sb">
-                                <a href=""><img src="images/icones/telegram-logo.svg" alt=""></a>
-                                <a href=""><img src="images/icones/youtube-logo.svg" alt=""></a>
-                                <a href=""><img src="images/icones/vk-logo.svg" alt=""></a>
+                                <a target="_blank" href="https://web.telegram.org"><img src="images/icones/telegram-logo.svg" alt=""></a>
+                                <a target="_blank" href="https://www.youtube.com/"><img src="images/icones/youtube-logo.svg" alt=""></a>
+                                <a target="_blank" href="https://www.vk.com/"><img src="images/icones/vk-logo.svg" alt=""></a>
                             </li>
                         </ul>
                     </nav>
@@ -74,7 +74,7 @@
         </div>
     </header>
 
-    <section class="container container__adapted--no-padding d-flex flex-sb section-main page-section alighn-i-center">
+    <section id="main" class="container container__adapted--no-padding d-flex flex-sb section-main page-section alighn-i-center">
         <div class="section-main__left text-center">
             <h1>Студия йоги</h1>
             <img src="images/icones/logo-big.svg" alt="">
@@ -97,7 +97,7 @@
 
         </div>
     </section>
-    <section class="container container__adapted--no-padding">
+    <section id="about-us" class="container container__adapted--no-padding">
         <h2 class="about-us__heading uppercase element-big text-center">О нас</h2>
         <div class="about-us d-flex page-section">
             <div class="about-us__poster animation-first element-animation">
@@ -115,7 +115,7 @@
         </div>
 
     </section>
-    <section class="section-grid container container__adapted page-section">
+    <section id="section-grid" class="section-grid container container__adapted page-section">
         <h2 class="section-grid__heading element-big uppercase text-center">
             Преимущества йоги
         </h2>
@@ -146,7 +146,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
         <div class="services__content container container__adapted padding-block">
             <h2 class="uppercase text-center element-big">Наши практики</h2>
             <div class="d-flex services__left-img-cont services__block alighn-i-center ">
@@ -224,7 +224,7 @@
             </div>
         </div>
     </section>
-    <section class="page-section schedule container__adapted">
+    <section id="schedule" class="page-section schedule container__adapted">
         <h2 class="uppercase text-center element-big">Выбери день для практики</h2>
         <div class="spolilers container" data-spoilers>
             <ul>
@@ -233,15 +233,13 @@
                         <span class="spoilers__title">Понедельник</span>
                         <span class="spoilers__icon"></span>
                     </button>
-                    <div class="spoilers__content" aria-hidden="true">
-                        <ul >
-                            <li>10:00 - 11:00  Хатха-йога</li>
-                            <li>11:00 - 11:30  Йога-нидра</li>
-                            <li>18:00 - 19:00  Аштанга-Йога</li>
-                            <li>19:00 - 20:00  Дживамукти -Йога</li>
-                            <li>20:00 - 20:20  Гвоздестояние</li>
-                        </ul>
-                    </div>
+                    <ul class="spoilers__content" aria-hidden="true">
+                        <li>10:00 - 11:00  Хатха-йога</li>
+                        <li>11:00 - 11:30  Йога-нидра</li>
+                        <li>18:00 - 19:00  Аштанга-Йога</li>
+                        <li>19:00 - 20:00  Дживамукти -Йога</li>
+                        <li>20:00 - 20:20  Гвоздестояние</li>
+                    </ul>
                 </li>
                 <li class="spoilers__item animation-first element-animation">
                     <button class="spoilers__control" aria-expanded="false">
@@ -324,7 +322,7 @@
             </ul>
         </div>
     </section>  
-    <section class="container container__adapted wrapper page-section">
+    <section id="teachers" class="container container__adapted wrapper page-section">
         <h2 class="uppercase text-center element-big">Учителя нашей студии</h2>
         <div class="image-slider swiper-container">
             <div class="image-slider__wrapper swiper-wrapper animation-first element-animation">
@@ -359,7 +357,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="container container__adapted offer page-section">
+    <section id="offer" class="container container__adapted offer page-section">
         <h2 class="uppercase text-center element-big">Цены на занятия йогой</h2>
         <div class="offer__cards">
             <div class="offer__item d-flex flex-sb animation-first element-animation">
@@ -428,7 +426,7 @@
 
         </div>
     </section>
-    <section class="gallery page-section container container__adapted">
+    <section id="gallery" class="gallery page-section container container__adapted">
         <h2 class="uppercase text-center">Галерея</h2>
         <div class="gallery__images">
             <div class="gallery__item animation-first element-animation"><img class="gallery__item--scale" src="images/gallery-img-1.jpg" alt=""></div>
@@ -442,7 +440,7 @@
         </div>
 
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container container__adapted padding-block">
             <h2 class="uppercase text-center element-big">Контакты</h2>
             <div class="contacts__content">
@@ -493,25 +491,25 @@
         <div class="footer__content container container__adapted padding-block">
             <nav class="footer__nav d-flex flex-sb">
                 <ul class="footer__column">
-                    <li><a href="">Айва</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Учителя</a></li>
+                    <li><a href="#main">Айва</a></li>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#teachers">Учителя</a></li>
                 </ul>
                 <ul class="footer__column">
-                    <li><a href="">Преимущества йоги</a></li>
-                    <li><a href="">Абонемент</a></li>
-                    <li><a href="">Галерея</a></li>
+                    <li><a href="#section-grid">Преимущества йоги</a></li>
+                    <li><a href="#offer">Абонемент</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
                 </ul>
                 <ul class="footer__column">
-                    <li><a href="">Практики</a></li>
-                    <li><a href="">Расписание</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="#services">Практики</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
                 <ul class="footer__column">
                     <li class="footer__social-media d-flex">
-                        <a href=""><img src="images/icones/telegram-logo.svg" alt=""></a>
-                        <a href=""><img src="images/icones/youtube-logo.svg" alt=""></a>
-                        <a href=""><img src="images/icones/vk-logo.svg" alt=""></a>
+                        <a target="_blank" href="https://web.telegram.org"><img src="images/icones/telegram-logo.svg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/"><img src="images/icones/youtube-logo.svg" alt=""></a>
+                        <a target="_blank" href="https://www.vk.com/"><img src="images/icones/vk-logo.svg" alt=""></a>
                     </li>
                     <li>
                         <a href="tel:+78002000800">8 800 2000 800</a>
@@ -521,13 +519,13 @@
             <a class="footer__logo d-flex" href=""><img src="images/icones/logo-footer.svg" alt=""></a>
         </div>
         <div class="footer__adapted container container__adapted padding-block d-flex flex-sb">
-            <a class="footer__logo" href=""><img src="images/icones/logo-footer.svg" alt=""></a>
+            <a class="footer__logo" href="#main"><img src="images/icones/logo-footer.svg" alt=""></a>
             <div class="footer__contacts">
                 <a class="footer__phone" href="tel:+78002000800">8 800 2000 800</a>
                 <div class="footer__social-media d-flex">
-                    <a href=""><img src="images/icones/telegram-logo.svg" alt=""></a>
-                    <a href=""><img src="images/icones/youtube-logo.svg" alt=""></a>
-                    <a href=""><img src="images/icones/vk-logo.svg" alt=""></a>
+                    <a target="_blank" href="https://web.telegram.org"><img src="images/icones/telegram-logo.svg" alt=""></a>
+                    <a target="_blank" href="https://www.youtube.com/"><img src="images/icones/youtube-logo.svg" alt=""></a>
+                    <a target="_blank" href="https://www.vk.com/"><img src="images/icones/vk-logo.svg" alt=""></a>
                 </div>
             </div>
         </div>
