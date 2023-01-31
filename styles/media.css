@@ -132,6 +132,10 @@
         display: none;
     }
 
+    .footer__adapted {
+        display: flex;
+    }
+
     .about-us {
         flex-direction: column;
     }
