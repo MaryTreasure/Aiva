@@ -966,5 +966,16 @@ body._lock {
     margin-bottom: 20px;
   }
 
+  .alert__success {
+    display: none;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    margin-top: -30px;
+    background-color: #1aed791d;
+
+
+  }
+
 
 

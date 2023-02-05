@@ -107,6 +107,44 @@ let options = {
     }
 
 
+        // Отправка формы в ТГ
+
+        const token = '6041505837:AAH7Wdw5t08SWcFVr59Qag68g5s9PLc_dIU';
+        const chatId = '-1001813669880';
+        const uriApi = `https://api.telegram.org/bot${ token }/sendMessage`;
+        const success = document.getElementById('success');
+    
+        document.getElementById('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+    
+            let message = `<b>Заявка с сайта Айва</b>\n`;
+            message += `<b>Отправитель: </b> ${ this.name.value}\n`;
+            message += `<b>Телефон: </b> ${ this.tel.value}\n`;
+            message += `<b>Почта: </b> ${ this.name.value}`;
+    
+            axios.post(uriApi, {
+                chat_id: chatId,
+                parse_mode: 'html',
+                text: message
+    
+            })
+    
+            .then((res) => {
+                this.name.value = '';
+                this.email.value = '';
+                this.tel.value = '';
+                success.innerHTML = 'Сообщение отправлено!';
+                success.style.display = 'flex';
+            })
+    
+            .catch((err) => {
+                console.warn(err);
+            })
+            .finally(() => {
+                console.log('Конец');
+            })
+        })
+    
     // Модальные окна 
 
     const popupLinks = document.querySelectorAll('.popup-link');
@@ -211,6 +249,7 @@ let options = {
             popupClose(popupActive);
         }
     });
+
 
 
 
