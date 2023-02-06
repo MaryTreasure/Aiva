@@ -43,7 +43,7 @@
                     <div class="menu__body-content container container__adapted--no-padding">
                         <div class="header__menu menu  ">
                             <div class="header__left d-flex">
-                                <a href="#main"><img src="images/icones/logo-menu.svg" alt=""></a>
+                                <a href="#main-anchor"><img src="images/icones/logo-menu.svg" alt=""></a>
                                 <div class="header__contacts--white">
                                     <p>Нижний Новгород, пр. Гагарина  118</p>
                                     <a class="header__phone--white" href="tel:+78002000800">8 800 2000 800</a>
@@ -469,7 +469,7 @@
         </section>
         <section class="container container__adapted feedback page-section">
             <div class="feedback__content d-flex animation-first element-animation">
-                <form id="form" class="feedback__form" action="">
+                <form id="form" class="feedback__form" action="#popup-submit">
                     <h3 class="feedback__form-heading uppercase">Запишитесь на пробный урок</h3>
                     <div class="feedback__form-field">
                         <input type="text" class="feedback__form-item" name="name" placeholder="Имя" required>
@@ -483,7 +483,7 @@
                     <button class="btn btn--ptimary feedback__btn feedback__btn--size">Отправить заявку</button>
                     <div id="success" class="alert alert__success" role="alert"></div>
                     <label class="feedback-form__terms">
-                        <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href=""> условиями обработки данных</a></p>
+                        <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href="pages/privacy-policy.html"> условиями обработки данных</a></p>
                     </label>
                 </form>
                 <img class="feedback__img animation-second element-animation" src="images/feedback-form-img.jpg" alt="">        
@@ -518,10 +518,10 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="footer__logo d-flex" href="#main"><img src="images/icones/logo-footer.svg" alt=""></a>
+                <a class="footer__logo d-flex" href="#main-anchor"><img src="images/icones/logo-footer.svg" alt=""></a>
             </div>
             <div class="footer__adapted container container__adapted padding-block d-flex flex-sb">
-                <a class="footer__logo" href="#main"><img src="images/icones/logo-footer.svg" alt=""></a>
+                <a class="footer__logo" href="#main-anchor"><img src="images/icones/logo-footer.svg" alt=""></a>
                 <div class="footer__contacts">
                     <a class="footer__phone" href="tel:+78002000800">8 800 2000 800</a>
                     <div class="footer__social-media d-flex">
@@ -549,7 +549,7 @@
                         </div>
                         <button class="btn btn--ptimary feedback__btn feedback__btn--size">Отправить заявку</button>
                         <label class="feedback-form__terms">
-                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href=""> условиями обработки данных</a></p>
+                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href="pages/privacy-policy.html"> условиями обработки данных</a></p>
                         </label>
                     </form>
                 </div>
@@ -573,7 +573,7 @@
                         </div>
                         <button class="btn btn--ptimary feedback__btn feedback__btn--size">Отправить заявку</button>
                         <label class="feedback-form__terms">
-                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href=""> условиями обработки данных</a></p>
+                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href="pages/privacy-policy.html"> условиями обработки данных</a></p>
                         </label>
                     </form>
                 </div>
@@ -597,7 +597,7 @@
                         </div>
                         <button class="btn btn--ptimary feedback__btn feedback__btn--size">Отправить заявку</button>
                         <label class="feedback-form__terms">
-                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href=""> условиями обработки данных</a></p>
+                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href="pages/privacy-policy.html"> условиями обработки данных</a></p>
                         </label>
                     </form>
                 </div>
@@ -622,12 +622,25 @@
                         <button class="btn btn--ptimary feedback__btn feedback__btn--size">Отправить заявку</button>
                         <div id="success" class="alert alert__success" role="alert"></div>
                         <label class="feedback-form__terms">
-                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href=""> условиями обработки данных</a></p>
+                            <p class="feedback-form__text">Нажимая кнопку «Отправить» вы соглашаетесь с <a class="feedback-form__text--link" href="pages/privacy-policy.html"> условиями обработки данных</a></p>
                         </label>
                     </form>
                 </div>
             </div>
         </div>
+
+        <div id="popup-submit" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close close-popup"> <img src="images/icones/popup-close.png" alt=""></a>
+                    <form id="form" class="feedback__form" action="">
+                        <h3 class="feedback__form-heading uppercase">Ваша заявка успешно отправлена</h3>
+                        <button class="btn btn--ptimary feedback__btn feedback__btn--size">Закрыть</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <script src="js/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <script src="js/app.js"></script>

@@ -206,7 +206,8 @@ p {
 .header__top-menu--underline::before {
 	content: '';
 	position: absolute;
-	left: 0; bottom: -1px;
+	left: 0; 
+    top: 14px;
 	width: 0;
 	height: 1px;
 	background-color: var(--color-brown);
@@ -632,6 +633,11 @@ body._lock {
     font-size: 50px;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 1;
+}
+
 .image-slider .swiper-pagination {
     bottom: 0;
 }
@@ -976,6 +982,69 @@ body._lock {
 
 
   }
+
+  /* Политика конфиденциальности */
+
+  .privacy-policy ol {
+	list-style: none;
+	font-size: 16px;
+	padding: 0;
+	margin: 10px 0;
+}
+.privacy-policy li {
+	margin: 0;
+	padding: 0 0 10px 40px;
+	position: relative;
+	line-height: 20px;
+}
+ li::before {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+	border-radius: 50%;
+}
+ 
+/* 1-й уровень */
+.privacy-policy {
+	counter-reset: num;
+}
+ol > li {
+	counter-increment: num;
+}
+ ol > li::before {
+	content: counter(num);
+    margin: -5px;
+
+}
+ 
+/* 2-й уровень */
+ol ol {
+	counter-reset: num2;
+}
+ol ol > li {
+	counter-increment: num2;
+}
+ol ol > li::before {
+	content: counter(num) '.' counter(num2);
+}
+ 
+/* 3-й уровень */
+ol ol ol {
+  counter-reset: num3;
+}
+ol ol ol > li {
+	counter-increment: num3;
+}
+ol ol ol > li::before {
+	content: counter(num) '.' counter(num2) '.' counter(num3);
+}
 
 
 

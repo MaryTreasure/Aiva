@@ -133,7 +133,7 @@ let options = {
                 this.name.value = '';
                 this.email.value = '';
                 this.tel.value = '';
-                success.innerHTML = 'Сообщение отправлено!';
+                success.innerHTML = 'Заявка отправлена';
                 success.style.display = 'flex';
             })
     
@@ -192,7 +192,9 @@ let options = {
                     popupClose(e.target.closest('.popup'));
                 }
             });
+            
         }
+        
     }
 
     function popupClose(popupActive, doUnlock = true) {
