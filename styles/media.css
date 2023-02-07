@@ -389,6 +389,21 @@
         height: 450px;
     }
 
+    .error {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .error__content {
+        align-items: center;
+    }
+
+    .error__img {
+        height: 394px;
+        width: 271px;
+    }
+
 }
 
 @media screen and (max-width: 450px) {

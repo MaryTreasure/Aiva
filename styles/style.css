@@ -1046,5 +1046,20 @@ ol ol ol > li::before {
 	content: counter(num) '.' counter(num2) '.' counter(num3);
 }
 
+.error__content {
+    flex-direction: column;
+}
+
+.error {
+    align-items: center;
+}
+
+.error__heading {
+    font-size: 100px;
+}
+
+.error__content {
+    max-width: 442px;
+}
 
 

@@ -1,0 +1,7 @@
+
+
+<!-- ErrorDocument 404 http://АДРЕС_САЙТА/404.html -->
+<!-- ErrorDocument 404 http://k-mixail.github.io/404.html -->
+ErrorDocument 404 http://marytreasure.github.io/AIVA/404.html
+<!-- ErrorDocument 404 /404.html -->
+<!-- ErrorDocument 404 http://k-mixail.github.io/SKI_PARK/404.html -->
